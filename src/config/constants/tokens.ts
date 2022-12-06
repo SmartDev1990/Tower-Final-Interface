@@ -43,7 +43,7 @@ export const cmpToken = defineTokens({
     18,
     'Syrub',
     'SyrupBar Token',
-    'https://Riceprotocol.org',
+    'https://towerswap.finance',
   ),
 } as const)
 

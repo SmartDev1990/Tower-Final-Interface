@@ -7,7 +7,7 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
     items: [
       {
         label: t('Website'),
-        href: 'https://riceprotocol.org',
+        href: 'https://towerswap.finance',
         isHighlighted: true,
       },
     ],
@@ -17,7 +17,7 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
     items: [
       {
         label: t('Customer Support'),
-        href: 'https://t.me/rice_dev',
+        href: 'https://t.me/towerswap',
       },
     ],
   },

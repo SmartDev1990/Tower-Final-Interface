@@ -101,42 +101,42 @@ export const getCustomMeta = (path: string, t: ContextApi['t']): PageMeta => {
       }
     case '/voting/proposal/create':
       return {
-        title: `${t('Make a Proposal')} | ${t('PancakeSwap')}`,
+        title: `${t('Make a Proposal')} | ${t('TowerSwap')}`,
       }
     case '/info':
       return {
-        title: `${t('Overview')} | ${t('PancakeSwap Info & Analytics')}`,
-        description: 'View statistics for Pancakeswap exchanges.',
+        title: `${t('Overview')} | ${t('TowerSwap Info & Analytics')}`,
+        description: 'View statistics for TowerSwap exchanges.',
       }
     case '/info/pools':
       return {
-        title: `${t('Pools')} | ${t('PancakeSwap Info & Analytics')}`,
-        description: 'View statistics for Pancakeswap exchanges.',
+        title: `${t('Pools')} | ${t('TowerSwap Info & Analytics')}`,
+        description: 'View statistics for TowerSwap exchanges.',
       }
     case '/info/tokens':
       return {
-        title: `${t('Tokens')} | ${t('PancakeSwap Info & Analytics')}`,
-        description: 'View statistics for Pancakeswap exchanges.',
+        title: `${t('Tokens')} | ${t('TowerSwap Info & Analytics')}`,
+        description: 'View statistics for TowerSwap exchanges.',
       }
     case '/nfts':
       return {
-        title: `${t('Overview')} | ${t('PancakeSwap')}`,
+        title: `${t('Overview')} | ${t('TowerSwap')}`,
       }
     case '/nfts/collections':
       return {
-        title: `${t('Collections')} | ${t('PancakeSwap')}`,
+        title: `${t('Collections')} | ${t('TowerSwap')}`,
       }
     case '/nfts/activity':
       return {
-        title: `${t('Activity')} | ${t('PancakeSwap')}`,
+        title: `${t('Activity')} | ${t('TowerSwap')}`,
       }
     case '/nfts/profile':
       return {
-        title: `${t('Profile')} | ${t('PancakeSwap')}`,
+        title: `${t('Profile')} | ${t('TowerSwap')}`,
       }
     case '/pancake-squad':
       return {
-        title: `${t('Pancake Squad')} | ${t('PancakeSwap')}`,
+        title: `${t('Pancake Squad')} | ${t('TowerSwap')}`,
       }
     default:
       return null
