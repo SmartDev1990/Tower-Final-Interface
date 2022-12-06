@@ -28,7 +28,7 @@ const farms: SerializedFarmConfig[] = [
     lpAddresses: {
       256256: '',
       56: '',
-      512512: '0xd611F8869A282CfD79723836e061bC118eB40A9b',
+      512512: '0xCF506651b80796D34085dADb1c761ebF71BB2b8d',
     },
     token: serializedTokens.cake,
     quoteToken: serializedTokens.wbnb,
