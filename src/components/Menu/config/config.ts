@@ -111,10 +111,10 @@ const config: (t: ContextApi['t'], languageCode?: string) => ConfigMenuItemsType
   //   icon: NftIcon,
   //   fillIcon: NftFillIcon,
   //   items: [
-      //     {
-      //       label: t('DogeChain'),
-      //       href: 'https://dogeswap.riceprotocol.org',
-      //     },
+  //     {
+  //       label: t('DogeChain'),
+  //       href: 'https://dogeswap.riceprotocol.org',
+  //     },
   //   ],
   // },
   {
@@ -123,39 +123,49 @@ const config: (t: ContextApi['t'], languageCode?: string) => ConfigMenuItemsType
     icon: MoreIcon,
     hideSubNav: true,
     items: [
+      // {
+      //   label: t('Info'),
+      //   href: '/info',
+      // },
+      // {
+      //   label: t('IFO'),
+      //   href: '/ifo',
+      // },
+      //     {
+      //       label: t('Voting'),
+      //       href: '/voting',
+      //     },
+      // {
+      //   type: DropdownMenuItemType.DIVIDER,
+      // },
+      // {
+      //   label: t('Leaderboard'),
+      //   href: '/teams',
+      // },
+      // {
+      //   type: DropdownMenuItemType.DIVIDER,
+      // },
       {
-        label: t('Info'),
-        href: '/info',
+        label: t('Website'),
+        href: 'https://towerswap.finance',
+        type: DropdownMenuItemType.EXTERNAL_LINK,
       },
-  // {
-  //   label: t('IFO'),
-  //   href: '/ifo',
-  // },
-  //     {
-  //       label: t('Voting'),
-  //       href: '/voting',
-  //     },
-  // {
-  //   type: DropdownMenuItemType.DIVIDER,
-  // },
-  // {
-  //   label: t('Leaderboard'),
-  //   href: '/teams',
-  // },
-  // {
-  //   type: DropdownMenuItemType.DIVIDER,
-  // },
-  {
-    label: t('Website'),
-    href: 'https://towerswap.finance',
-    type: DropdownMenuItemType.EXTERNAL_LINK,
-  },
-    {
-      label: t('Docs'),
-      href: 'https://docs.towerswap.finance',
-      type: DropdownMenuItemType.EXTERNAL_LINK,
-    },
-  ],
+      {
+        label: t('Docs'),
+        href: 'https://docs.towerswap.finance',
+        type: DropdownMenuItemType.EXTERNAL_LINK,
+      },
+      {
+        label: t('Telegram'),
+        href: 'https://t.me/towerswap',
+        type: DropdownMenuItemType.EXTERNAL_LINK,
+      },
+      {
+        label: t('Twitter'),
+        href: 'https://twitter.com/towerdefi',
+        type: DropdownMenuItemType.EXTERNAL_LINK,
+      },
+    ],
   },
 ]
 
