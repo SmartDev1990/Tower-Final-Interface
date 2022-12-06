@@ -1,0 +1,38 @@
+{
+  "name": "PancakeSwap Default List",
+  "timestamp": "2022-01-26T11:45:09Z",
+  "version": {
+    "major": 4,
+    "minor": 0,
+    "patch": 0
+  },
+  "tags": {},
+  "logoURI": "https://pancakeswap.finance/logo.png",
+  "keywords": ["pancake", "default"],
+  "tokens": [
+    {
+      "name": "Wrapped CMP",
+      "symbol": "WCMP",
+      "address": "0xab6b6212e5443228d586ce5aeb54b02b185208cc",
+      "chainId": 512512,
+      "decimals": 18,
+      "logoURI": "https://dexi.azureedge.net/tokens/cmp.png"
+    },
+    {
+      "name": "TowerTestnet Token",
+      "symbol": "TW",
+      "address": "0x09FB691A786284e99D122D2B68dE40D253fec299",
+      "chainId": 512512,
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/smartdev1990/default-token-list/main/assets/tokens/VELAS/0x9275006694F8Bd6B912d551Bb73295ec32E24B88/logo.png"
+    },
+    {
+      "name": "BUSD Tower",
+      "symbol": "BUSDt",
+      "address": "0xA5d20d84deeEd3850a7538e993E3b2592bf997A0",
+      "chainId": 512512,
+      "decimals": 18,
+      "logoURI": "https://tokens.pancakeswap.finance/images/symbol/busd.png"
+    }
+  ]
+}
