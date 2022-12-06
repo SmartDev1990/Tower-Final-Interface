@@ -21,7 +21,7 @@ const tradingViewListener = async () =>
   )
 
 const initializeTradingView = (TradingViewObj: any, theme: DefaultTheme, localeCode: string, opts: any) => {
-  let timezone = 'Etc/UTC'
+  let timezone = 'UNIX timestamp'
   try {
     timezone = Intl.DateTimeFormat().resolvedOptions().timeZone
   } catch (e) {
@@ -36,7 +36,7 @@ const initializeTradingView = (TradingViewObj: any, theme: DefaultTheme, localeC
     id: opts.container_id,
     autosize: true,
     height: '100%',
-    symbol: 'Caduceus:CMPBUSD',
+    symbol: 'KUCOIN:CMPUSDT',
     interval: '5',
     timezone,
     theme: theme.isDark ? 'dark' : 'light',

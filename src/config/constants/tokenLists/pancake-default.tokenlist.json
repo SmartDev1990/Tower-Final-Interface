@@ -29,7 +29,7 @@
     {
       "name": "BUSD Tower",
       "symbol": "BUSDt",
-      "address": "0xA5d20d84deeEd3850a7538e993E3b2592bf997A0",
+      "address": "0xb21668048d42d7d6423b070b278f5af14e1f1600",
       "chainId": 512512,
       "decimals": 18,
       "logoURI": "https://tokens.pancakeswap.finance/images/symbol/busd.png"

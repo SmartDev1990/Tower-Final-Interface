@@ -120,10 +120,18 @@ export const testnetTokens = defineTokens({
   ),
   busd: new Token(
   ChainId.TESTNET,
-    '0xA5d20d84deeEd3850a7538e993E3b2592bf997A0',
+    '0xb21668048d42d7d6423b070b278f5af14e1f1600',
     18,
     'BUSDt',
     'BUSD tower',
+    'https://towerswap.finance',
+  ),
+  usdt: new Token(
+  ChainId.TESTNET,
+    '0x55a9f6aa17886dc17e407b3ec4570f0ca8b9704a',
+    6,
+    'USDTt',
+    'Tower USDT',
     'https://towerswap.finance',
   ),
   syrup: new Token(
