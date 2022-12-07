@@ -37,11 +37,27 @@ export const cmpToken = defineTokens({
     'Towerswap Token',
     'https://towerswap.finance',
   ),
-  syrub: new Token(
-    ChainId.CMP,
-    '0xd6274E2043bce7E2b2B84949e6a84A0a6C5C604D',
+  busd: new Token(
+  ChainId.CMP,
+    '0xb21668048d42d7d6423b070b278f5af14e1f1600',
     18,
-    'Syrub',
+    'BUSDt',
+    'BUSD tower',
+    'https://www.paxos.com/busd/',
+  ),
+  usdt: new Token(
+  ChainId.CMP,
+    '0x55a9f6aa17886dc17e407b3ec4570f0ca8b9704a',
+    6,
+    'USDTt',
+    'Tower USDT',
+    'https://towerswap.finance',
+  ),
+  syrup: new Token(
+    ChainId.CMP,
+    '0x2DD80bE5B44cdcB3f39dEb9cE483c8f67191f478',
+    18,
+    'SYRUP',
     'SyrupBar Token',
     'https://towerswap.finance',
   ),
@@ -67,48 +83,48 @@ export const mainnetTokens = defineTokens({
     'https://pancakeswap.finance/',
   ),
   busd: new Token(
-    MAINNET,
-    '0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56',
+  MAINNET,
+    '0xb21668048d42d7d6423b070b278f5af14e1f1600',
     18,
-    'BUSD',
-    'Binance USD',
+    'BUSDt',
+    'BUSD tower',
     'https://www.paxos.com/busd/',
   ),
-  dai: new Token(
-    MAINNET,
-    '0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3',
-    18,
-    'DAI',
-    'Dai Stablecoin',
-    'https://www.makerdao.com/',
-  ),
   usdt: new Token(
+  MAINNET,
+    '0x55a9f6aa17886dc17e407b3ec4570f0ca8b9704a',
+    6,
+    'USDTt',
+    'Tower USDT',
+    'https://towerswap.finance',
+  ),
+  syrup: new Token(
     MAINNET,
-    '0x55d398326f99059fF775485246999027B3197955',
+    '0x2DD80bE5B44cdcB3f39dEb9cE483c8f67191f478',
     18,
-    'USDT',
-    'Tether USD',
-    'https://tether.to/',
+    'SYRUP',
+    'SyrupBar Token',
+    'https://towerswap.finance',
   ),
 } as const)
 
 export const testnetTokens = defineTokens({
   wbnb: new Token(
     ChainId.TESTNET,
-    '0xaB6b6212e5443228D586cE5Aeb54B02b185208Cc',
+    '0xab6b6212e5443228d586ce5aeb54b02b185208cc',
     18,
     'WCMP',
     'Wrapped CMP',
-    'https://www.binance.com/',
+    'https://caduceus.foundation/'
   ),
   // bnb here points to the wbnb contract. Wherever the currency BNB is required, conditional checks for the symbol 'BNB' can be used
   bnb: new Token(
     ChainId.TESTNET,
-    '0xaB6b6212e5443228D586cE5Aeb54B02b185208Cc',
+    '0xab6b6212e5443228d586ce5aeb54b02b185208cc',
     18,
     'WCMP',
     'Wrapped CMP',
-    'https://www.binance.com/',
+    'https://caduceus.foundation/'
   ),
   cake: new Token(
     ChainId.TESTNET,
@@ -124,7 +140,7 @@ export const testnetTokens = defineTokens({
     18,
     'BUSDt',
     'BUSD tower',
-    'https://towerswap.finance',
+    'https://www.paxos.com/busd/',
   ),
   usdt: new Token(
   ChainId.TESTNET,
@@ -150,11 +166,11 @@ const tokens = () => {
   // If testnet - return list comprised of testnetTokens wherever they exist, and mainnetTokens where they don't
   if (parseInt(chainId, 10) === ChainId.TESTNET) {
     return Object.keys(testnetTokens).reduce((accum, key) => {
-      return { ...accum, [key]: cmpToken[key] || testnetTokens[key] || mainnetTokens[key] }
+      return { ...accum, [key]: cmpToken[key] || mainnetTokens[key] || testnetTokens[key] }
     }, {} as typeof cmpToken & typeof mainnetTokens & typeof testnetTokens)
   }
 
-  return cmpToken
+  return testnetToken
 }
 
 const unserializedTokens = tokens()

@@ -3,7 +3,7 @@ import { SerializedFarmConfig } from './types'
 import { CHAIN_ID } from './networks'
 
 const serializedTokens = serializeTokens(testnetTokens)
-export const CAKE_BNB_LP_MAINNET = '0xd611F8869A282CfD79723836e061bC118eB40A9b'
+export const CAKE_BNB_LP_MAINNET = '0xa4B690F4F53caC099549e57e6309A11c79C6Bf56b'
 
 const farms: SerializedFarmConfig[] = [
   /**
@@ -33,6 +33,18 @@ const farms: SerializedFarmConfig[] = [
     token: serializedTokens.cake,
     quoteToken: serializedTokens.wbnb,
   },
+  {
+    pid: 2,
+    v1pid: 2,
+    lpSymbol: 'TW-BUSD LP',
+    lpAddresses: {
+      256256: '',
+      56: '',
+      512512: '0xa4B690F4F53caC099549e57e6309A11c79C6Bf56',
+    },
+    token: serializedTokens.cake,
+    quoteToken: serializedTokens.busd,
+  },
   // {
   //   pid: 3,
   //   v1pid: 3,
@@ -40,7 +52,7 @@ const farms: SerializedFarmConfig[] = [
   //   lpAddresses: {
   //     256256: '',
   //     56: '',
-  //     512512: '0xd611F8869A282CfD79723836e061bC118eB40A9b',
+  //     512512: '0x6b9dB0B7504e04E2a4E5C4B6B22bD84E9a8710fd',
   //   },
   //   token: serializedTokens.busd,
   //   quoteToken: serializedTokens.wbnb,

@@ -58,7 +58,7 @@ const useGetTopFarmsByApr = (isIntersecting: boolean) => {
       })
 
       const sortedByApr = orderBy(farmsWithApr, (farm) => farm.apr + farm.lpRewardsApr, 'desc')
-      setTopFarms(sortedByApr.slice(0, 5))
+      setTopFarms(sortedByApr.slice(0, 2))
     }
 
     if (fetchStatus === FetchStatus.Fetched && !topFarms[0]) {

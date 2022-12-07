@@ -1,9 +1,9 @@
 import { Token, ChainId } from '@smartdev1990/cmp-sdk'
 import { testnetTokens } from './tokens'
-import { CAKE_BNB_LP_MAINNET } from './farms'
+/// import { CAKE_BNB_LP_MAINNET } from './farms'
 import { Ifo } from './types'
 
-export const cakeBnbLpToken = new Token(ChainId.CMP, CAKE_BNB_LP_MAINNET, 18, 'CAKE-BNB LP')
+// export const cakeBnbLpToken = new Token(ChainId.CMP, CAKE_BNB_LP_MAINNET, 18, 'CAKE-BNB LP')
 
 const ifos: Ifo[] = [
   // {
