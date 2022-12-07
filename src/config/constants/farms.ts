@@ -22,8 +22,8 @@ const farms: SerializedFarmConfig[] = [
     quoteToken: serializedTokens.wbnb,
   },
   {
-    pid: 2,
-    v1pid: 2,
+    pid: 1,
+    v1pid: 1,
     lpSymbol: 'TW-WCMP LP',
     lpAddresses: {
       256256: '',

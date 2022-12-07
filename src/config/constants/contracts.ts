@@ -16,14 +16,14 @@ import { Syrup__factory } from "config/abi/types"
 
 export default {
   masterChef: {
-    256256: '0x47e6B11Cd7E9664F97E9E570Dd73Cefd934f6E82',
-    512512: '',
-    56: '0x77982827A6EfaB180bC2050346ea69855f6b7250',
+    256256: '',
+    512512: '0xdd25bdce10e6c7d4bb4804fe1f5d2aa04aac8d01',
+    56: '',
   },
   masterChefV1: {
-    256256: '0x47B015380CB3Cd8Cd13c65501a9FDBEDC1e2f0D7',
-    512512: '',
-    56: '0x73feaa1eE314F8c655E354234017bE2193C9E24E',
+    256256: '',
+    512512: '0xa71727ebea25cf07b4d4775a5f53798ea860fd5b',
+    56: '',
   },
   sousChef: {
     256256: '0x421a5d63fcC7d60cE3E1Ab3E4b8993ae31087E0e',
