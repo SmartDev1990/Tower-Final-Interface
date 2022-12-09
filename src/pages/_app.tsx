@@ -54,16 +54,16 @@ function MyApp(props: AppProps) {
 				/>
 				<meta
 					name="description"
-					content="Cheaper and faster than Uniswap? Discover PancakeSwap, the leading DEX on BNB Smart Chain (BSC) with the best farms in DeFi and a lottery for CAKE."
+					content="Cheaper and faster than other swap, the leading DEX on Cadeceus Chain (CMP) with the best farms in DeFi and a lottery for TW."
 				/>
 				<meta name="theme-color" content="#1FC7D4" />
-				<meta name="twitter:image" content="https://i.ibb.co/G3V8HTd/1.png" />
+				<meta name="twitter:image" content="https://i.ibb.co/qxbcbfp/3dpan.png" />
 				<meta
 					name="twitter:description"
-					content="The most popular AMM on BSC! Earn RICE through yield farming or win it in the Lottery and Initial Farm Offerings (new token launch model pioneered by Rice-swap), NFTs, and more, on a platform you can trust."
+					content="The most popular AMM on Cadeceus! Earn TW through yield farming or win it in the Lottery and Initial Farm Offerings (new token launch model pioneered by Towerswap), NFTs, and more, on a platform you can trust."
 				/>
 				<meta name="twitter:card" content="summary_large_image" />
-				<meta name="twitter:title" content="🥞 RiceSwap - A next evolution DeFi exchange on Bigert Chain" />
+				<meta name="twitter:title" content="🥞 TowerSwap - A next evolution DeFi exchange on Cadeceus Chain" />
 				<title>TowerSwap</title>
 			</Head>
 			<Providers store={store}>

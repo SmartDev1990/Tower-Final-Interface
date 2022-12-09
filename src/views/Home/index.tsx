@@ -57,7 +57,7 @@ const Home: React.FC = () => {
 				background={
 					0 === 0
 						? 'linear-gradient(90deg, rgba(196,245,246,0.5471230728619573) 13%, rgba(221,219,255,0.502305145691089) 96%)'
-						: 'linear-gradient(139.73deg, #faffff 0%, #fff 100%)'
+						: 'linear-gradient(139.73deg, #ffffff 0%, #fff 100%)'
 				}
 				index={2}
 				hasCurvedDivider

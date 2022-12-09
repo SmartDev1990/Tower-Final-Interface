@@ -1,7 +1,7 @@
 {
-  "short_name": "RiceSwap",
-  "name": "RiceSwap",
-  "description": "Farm RICE with RiceSwap LP Tokens",
+  "short_name": "TowerSwap",
+  "name": "TowerSwap Exchange",
+  "description": "Farm TW with TowerSwap LP Tokens",
   "homepage_url": "#",
   "start_url": ".",
   "display": "standalone",

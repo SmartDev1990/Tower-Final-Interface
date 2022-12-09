@@ -20,7 +20,7 @@ export const vaultPoolConfig = {
     autoCompoundFrequency: 5000,
     gasLimit: 2000000,
     tokenImage: {
-      primarySrc: `/images/tokens/${testnetTokens.cake.address}.png`,
+      primarySrc: `/images/tokens/${testnetTokens.wbnb.address}.png`,
       secondarySrc: '/images/tokens/autorenew.svg',
     },
   },
@@ -30,7 +30,7 @@ export const vaultPoolConfig = {
     autoCompoundFrequency: 5000,
     gasLimit: 2000000,
     tokenImage: {
-      primarySrc: `/images/tokens/${testnetTokens.cake.address}.png`,
+      primarySrc: `/images/tokens/${testnetTokens.wbnb.address}.png`,
       secondarySrc: '/images/tokens/autorenew.svg',
     },
   },
@@ -40,7 +40,7 @@ export const vaultPoolConfig = {
     autoCompoundFrequency: 1,
     gasLimit: 2000000,
     tokenImage: {
-      primarySrc: `/images/tokens/${testnetTokens.cake.address}.png`,
+      primarySrc: `/images/tokens/${testnetTokens.wbnb.address}.png`,
       secondarySrc: `/images/tokens/ifo-pool-icon.svg`,
     },
   },
@@ -63,18 +63,44 @@ export const livePools: SerializedPoolConfig[] = [
   {
     sousId: 1,
     stakingToken: serializedTokens.cake,
-    earningToken: serializedTokens.busd,
+    earningToken: serializedTokens.cake,
     contractAddress: {
       256256: '0xdd25bdce10e6c7d4bb4804fe1f5d2aa04aac8d01',
       56: '0xdd25bdce10e6c7d4bb4804fe1f5d2aa04aac8d01',
-      512512: '0xd1801d8501e98E6c05CC9da4b5dc5729BA865704',
+      512512: '0xFb488AB713F6B58b0ACc9B38C8A118F9A860e99c',
     },
     poolCategory: PoolCategory.CORE,
-    tokenPerBlock: '10',
+    tokenPerBlock: '100',
     isFinished: false,
   },
   {
     sousId: 2,
+    stakingToken: serializedTokens.cake,
+    earningToken: serializedTokens.wbnb,
+    contractAddress: {
+      256256: '0xdd25bdce10e6c7d4bb4804fe1f5d2aa04aac8d01',
+      56: '0xdd25bdce10e6c7d4bb4804fe1f5d2aa04aac8d01',
+      512512: '0xFb488AB713F6B58b0ACc9B38C8A118F9A860e99c',
+    },
+    poolCategory: PoolCategory.CORE,
+    tokenPerBlock: '100',
+    isFinished: false,
+  },
+  {
+    sousId: 3,
+    stakingToken: serializedTokens.cake,
+    earningToken: serializedTokens.busd,
+    contractAddress: {
+      256256: '0xdd25bdce10e6c7d4bb4804fe1f5d2aa04aac8d01',
+      56: '0xdd25bdce10e6c7d4bb4804fe1f5d2aa04aac8d01',
+      512512: '0xFb488AB713F6B58b0ACc9B38C8A118F9A860e99c',
+    },
+    poolCategory: PoolCategory.CORE,
+    tokenPerBlock: '100',
+    isFinished: false,
+  },
+  {
+    sousId: 4,
     stakingToken: serializedTokens.cake,
     earningToken: serializedTokens.usdt,
     contractAddress: {

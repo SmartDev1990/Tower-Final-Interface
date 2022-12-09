@@ -6,7 +6,7 @@ import { useTranslation } from 'contexts/Localization'
 import useTheme from 'hooks/useTheme'
 import Image from 'next/image'
 import styled, { keyframes } from 'styled-components'
-import bunnyImage from '../../../../public/images/home/lunar-bunny/bunny@2x.png'
+import bunnyImage from '../../../../public/images/home/lunar-bunny/tw1.png'
 import CompositeImage, { CompositeImageProps } from './CompositeImage'
 import { SlideSvgDark, SlideSvgLight } from './SlideSvg'
 
@@ -98,7 +98,7 @@ const Hero = () => {
 		<>
 			<BgWrapper>
 				<InnerWrapper>
-					{theme.isDark ? <SlideSvgDark width="100%" /> : <SlideSvgLight width="100%" />}
+					{theme.islight ? <SlideSvgDark width="100%" /> : <SlideSvgLight width="100%" />}
 				</InnerWrapper>
 			</BgWrapper>
 			<Flex
@@ -111,10 +111,10 @@ const Hero = () => {
 			>
 				<Flex flex="1" flexDirection="column">
 					<Heading scale="xxl" color="primaryDark" mb="24px">
-						{t('Decentralized Exchange Made For Everybody')}
+						{t('TowerSwap Exchange')}
 					</Heading>
 					<Heading scale="md" color="primaryDark" mb="24px">
-						{t('Swap, Farm, Stake, Earn passive income and increase your financial freedom by trade on TowerSwap exchange.')}
+						{t('Decentralized Exchange Made For Everybody. Swap, Farm, Stake, Earn passive income and increase your financial freedom by trade on TowerSwap exchange.')}
 					</Heading>
 					<Flex>
 						{!account && <ConnectWalletButton mr="8px" />}
