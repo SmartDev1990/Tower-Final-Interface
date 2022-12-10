@@ -68,7 +68,7 @@ export const cardConfig = (
       }
 
       return {
-        title: t('Basic Sale'),
+        title: t('Private Sale'),
         variant: 'blue',
         tooltip: t(
           'Every person can only commit a limited amount, but may expect a higher return per token committed.',

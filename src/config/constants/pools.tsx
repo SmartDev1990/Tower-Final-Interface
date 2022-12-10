@@ -67,7 +67,7 @@ export const livePools: SerializedPoolConfig[] = [
     contractAddress: {
       256256: '0xdd25bdce10e6c7d4bb4804fe1f5d2aa04aac8d01',
       56: '0xdd25bdce10e6c7d4bb4804fe1f5d2aa04aac8d01',
-      512512: '0xFb488AB713F6B58b0ACc9B38C8A118F9A860e99c',
+      512512: '0x82F6fC7AD9124Ef3196a571E6d06De0713437736',
     },
     poolCategory: PoolCategory.CORE,
     tokenPerBlock: '100',
@@ -80,10 +80,10 @@ export const livePools: SerializedPoolConfig[] = [
     contractAddress: {
       256256: '0xdd25bdce10e6c7d4bb4804fe1f5d2aa04aac8d01',
       56: '0xdd25bdce10e6c7d4bb4804fe1f5d2aa04aac8d01',
-      512512: '0xFb488AB713F6B58b0ACc9B38C8A118F9A860e99c',
+      512512: '0x201583a8907F76EC2f0300052d88c70b7b97dA34',
     },
     poolCategory: PoolCategory.CORE,
-    tokenPerBlock: '100',
+    tokenPerBlock: '1000',
     isFinished: false,
   },
   {
@@ -93,7 +93,7 @@ export const livePools: SerializedPoolConfig[] = [
     contractAddress: {
       256256: '0xdd25bdce10e6c7d4bb4804fe1f5d2aa04aac8d01',
       56: '0xdd25bdce10e6c7d4bb4804fe1f5d2aa04aac8d01',
-      512512: '0xFb488AB713F6B58b0ACc9B38C8A118F9A860e99c',
+      512512: '0xe9047467CBFb9c9B1c6f831666301718689fCD11',
     },
     poolCategory: PoolCategory.CORE,
     tokenPerBlock: '100',
@@ -106,10 +106,10 @@ export const livePools: SerializedPoolConfig[] = [
     contractAddress: {
       256256: '0xdd25bdce10e6c7d4bb4804fe1f5d2aa04aac8d01',
       56: '0xdd25bdce10e6c7d4bb4804fe1f5d2aa04aac8d01',
-      512512: '0xFb488AB713F6B58b0ACc9B38C8A118F9A860e99c',
+      512512: '0x087C9d6D8A9626161e881B3a3866062244776347',
     },
     poolCategory: PoolCategory.CORE,
-    tokenPerBlock: '100',
+    tokenPerBlock: '1000',
     isFinished: false,
   },
   // {

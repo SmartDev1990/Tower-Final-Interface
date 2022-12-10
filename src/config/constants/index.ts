@@ -45,7 +45,7 @@ export const SUGGESTED_BASES: ChainTokenList = {
 // used to construct the list of all pairs we consider by default in the frontend
 export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
   [ChainId.CMP]: [cmpToken.wbnb, cmpToken.cake],
-  [ChainId.MAINNET]: [],
+  [ChainId.MAINNET]: [cmpToken.wbnb, cmpToken.cake],
   [ChainId.TESTNET]: [testnetTokens.wbnb, testnetTokens.cake],
 }
 

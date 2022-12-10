@@ -5,8 +5,8 @@ import { Syrup__factory } from "config/abi/types"
 
 /**
  *
- * v1:0x47B015380CB3Cd8Cd13c65501a9FDBEDC1e2f0D7
- * v2:0x47e6B11Cd7E9664F97E9E570Dd73Cefd934f6E82
+ * v1:0xa71727ebea25cf07b4d4775a5f53798ea860fd5b
+ * v2:0xdd25bdce10e6c7d4bb4804fe1f5d2aa04aac8d01
  * dummy:0x494A30F4142Cfa83E59cee3DF0Bf74F5f3404Ed8
  * cakePool:0x8EB8b40361730a6cEC17d4CF8da1e81cD351a0ee
  * farmboost:0xBba306a2Fc6De834f676132c60152B6317B6fB83
@@ -99,7 +99,7 @@ export default {
   cakeVault: {
     256256: '0x8EB8b40361730a6cEC17d4CF8da1e81cD351a0ee',
     56: '0x45c54210128a065de780C4B0Df3d16664f7f859e',
-    512512: '',
+    512512: '0x8EB8b40361730a6cEC17d4CF8da1e81cD351a0ee',
   },
   cakeFlexibleSideVault: {
     256256: '0xf0B02B3Eeb1Fe1057691f4267f62CfCeaa8A81D8',

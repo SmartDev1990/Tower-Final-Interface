@@ -5,7 +5,7 @@ export const DEFAULT_META: PageMeta = {
   title: 'TowerSwap',
   description:
     'The most popular AMM on Cadeceus by user count! Earn TW tokens through yield farming and Initial Farm Offerings (new token launch model pioneered by TowerSwap), NFTs, and more, on a platform you can trust.',
-  image: 'https://i.ibb.co/G3V8HTd/1.png',
+  image: 'https://i.ibb.co/qxbcbfp/3dpan.png',
 }
 
 export const getCustomMeta = (path: string, t: ContextApi['t']): PageMeta => {

@@ -79,8 +79,11 @@ const Home = () => {
             <Heading as="h1" scale="xxl" color="secondary" mb="24px">
               {t('NFT Marketplace')}
             </Heading>
+            <Heading as="h1" scale="xxl" color="blue" mb="24px">
+              {t('Coming Soon')}
+            </Heading>
             <Heading scale="lg" color="text">
-              {t('Buy and Sell NFTs on Bitgert Chain')}
+              {t('Buy and Sell NFTs on Cadeceus Chain')}
             </Heading>
             {account && (
               <Button as={NextLinkFromReactRouter} to={`${nftsBaseUrl}/profile/${account.toLowerCase()}`} mt="32px">

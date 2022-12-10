@@ -85,26 +85,26 @@ const config: (t: ContextApi['t'], languageCode?: string) => ConfigMenuItemsType
   //     },
   //   ],
   // },
-  // {
-  //   label: t('NFT'),
-  //   href: ``,
-  //   icon: NftIcon,
-  //   fillIcon: NftFillIcon,
-  //   items: [
-  // {
-  //   label: t('Overview'),
-  //   href: `${nftsBaseUrl}`,
-  // },
-  // {
-  //   label: t('Collections'),
-  //   href: `${nftsBaseUrl}/#`,
-  // },
-  // {
-  //   label: t('Activity'),
-  //   href: `${nftsBaseUrl}/#`,
-  // },
-  //   ],
-  // },
+  {
+    label: t('NFT'),
+    href: `/nfts`,
+    icon: NftIcon,
+    fillIcon: NftFillIcon,
+    items: [
+      {
+            label: t('Overview'),
+            href: `${nftsBaseUrl}`,
+          },
+          {
+            label: t('Collections'),
+            href: `${nftsBaseUrl}/collections`,
+          },
+          {
+            label: t('Activity'),
+            href: `${nftsBaseUrl}/activity`,
+          },
+  ],
+  },
   // {
   //   label: t('DogeChain'),
   //   href: 'https://dogeswap.riceprotocol.org',
@@ -123,10 +123,14 @@ const config: (t: ContextApi['t'], languageCode?: string) => ConfigMenuItemsType
     icon: MoreIcon,
     hideSubNav: true,
     items: [
-      // {
-      //   label: t('Info'),
-      //   href: '/info',
-      // },
+      {
+        label: t('Token Info'),
+        href: '/info',
+      },
+      {
+        label: t('Launchpad'),
+        href: '/',
+      },
       // {
       //   label: t('IFO'),
       //   href: '/ifo',

@@ -39,7 +39,7 @@ export const cmpToken = defineTokens({
   ),
   busd: new Token(
   ChainId.CMP,
-    '0xb21668048d42d7d6423b070b278f5af14e1f1600',
+    '0xB21668048d42d7d6423B070B278F5Af14e1f1600',
     18,
     'BUSDt',
     'BUSD tower',
@@ -47,7 +47,7 @@ export const cmpToken = defineTokens({
   ),
   usdt: new Token(
   ChainId.CMP,
-    '0x55a9f6aa17886dc17e407b3ec4570f0ca8b9704a',
+    '0x55A9f6AA17886DC17E407b3Ec4570f0CA8b9704a',
     6,
     'USDTt',
     'Tower USDT',
@@ -84,7 +84,7 @@ export const mainnetTokens = defineTokens({
   ),
   busd: new Token(
   MAINNET,
-    '0xb21668048d42d7d6423b070b278f5af14e1f1600',
+    '0xB21668048d42d7d6423B070B278F5Af14e1f1600',
     18,
     'BUSDt',
     'BUSD tower',
@@ -92,7 +92,7 @@ export const mainnetTokens = defineTokens({
   ),
   usdt: new Token(
   MAINNET,
-    '0x55a9f6aa17886dc17e407b3ec4570f0ca8b9704a',
+    '0x55A9f6AA17886DC17E407b3Ec4570f0CA8b9704a',
     6,
     'USDTt',
     'Tower USDT',
@@ -111,7 +111,7 @@ export const mainnetTokens = defineTokens({
 export const testnetTokens = defineTokens({
   wbnb: new Token(
     ChainId.TESTNET,
-    '0xab6b6212e5443228d586ce5aeb54b02b185208cc',
+    '0xaB6b6212e5443228D586cE5Aeb54B02b185208Cc',
     18,
     'WCMP',
     'Wrapped CMP',
@@ -120,7 +120,7 @@ export const testnetTokens = defineTokens({
   // bnb here points to the wbnb contract. Wherever the currency BNB is required, conditional checks for the symbol 'BNB' can be used
   bnb: new Token(
     ChainId.TESTNET,
-    '0xab6b6212e5443228d586ce5aeb54b02b185208cc',
+    '0xaB6b6212e5443228D586cE5Aeb54B02b185208Cc',
     18,
     'WCMP',
     'Wrapped CMP',
@@ -136,7 +136,7 @@ export const testnetTokens = defineTokens({
   ),
   busd: new Token(
   ChainId.TESTNET,
-    '0xb21668048d42d7d6423b070b278f5af14e1f1600',
+    '0xB21668048d42d7d6423B070B278F5Af14e1f1600',
     18,
     'BUSD',
     'BUSD tower',
@@ -144,7 +144,7 @@ export const testnetTokens = defineTokens({
   ),
   usdt: new Token(
   ChainId.TESTNET,
-    '0x55a9f6aa17886dc17e407b3ec4570f0ca8b9704a',
+    '0x55A9f6AA17886DC17E407b3Ec4570f0CA8b9704a',
     6,
     'USDT',
     'Tower USDT',
