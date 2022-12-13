@@ -1,4 +1,4 @@
-import { Heading, Flex, Text, Skeleton, ChartIcon, CommunityIcon, SwapIcon } from '@pancakeswap/uikit'
+import { Heading, Flex, Text, Skeleton, ChartIcon, CommunityIcon, Link, SwapIcon } from '@pancakeswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import useTheme from 'hooks/useTheme'
 import { formatLocalisedCompactNumber } from 'utils/formatBalance'
@@ -35,16 +35,17 @@ const Stats = () => {
 
   return (
     <Flex justifyContent="center" alignItems="center" flexDirection="column">
-      <GradientLogo height="48px" width="48px" mb="24px" />
-      <Heading textAlign="center" scale="xl">
-        {t('Used by millions.')}
+      <GradientLogo height="100px" width="100px" mb="24px" />
+      <Heading textAlign="center" color= "#42fff4" scale="xl" mb="32px">
+        {t('Tower Token')}
       </Heading>
-      <Heading textAlign="center" scale="xl" mb="32px">
-        {t('Trusted with billions.')}
-      </Heading>
+      {/* <Heading textAlign="center" scale="xl" mb="32px"> */}
+      {/*   {t('Trusted with billions.')} */}
+      {/* </Heading> */}
       <Text textAlign="center" color="textSubtle">
-        {t('PancakeSwap has the most users of any decentralized platform, ever.')}
+        {t('Tower token is the main token token in TowerSwap.')}
       </Text>
+      {/*
       <Flex flexWrap="wrap">
         <Text display="inline" textAlign="center" color="textSubtle" mb="20px">
           {entrusting}
@@ -52,34 +53,65 @@ const Stats = () => {
           {inFunds}
         </Text>
       </Flex>
+      */}
+
 
       <Text textAlign="center" color="textSubtle" bold mb="32px">
-        {t('Will you join them?')}
+        {t('')}
       </Text>
 
-      <Flex flexDirection={['column', null, null, 'row']}>
-        <IconCard {...UsersCardData} mr={[null, null, null, '16px']} mb={['16px', null, null, '0']}>
+
+       <Flex flexDirection={['column', null, null, 'row']}>
+         <IconCard {...UsersCardData} mr={[null, null, null, '16px']} mb={['16px', null, null, '16px']}>
           <StatCardContent
-            headingText={t('%users% users', { users })}
-            bodyText={t('in the last 30 days')}
+             headingText={t('Name')}
+            bodyText={t('TowerSwap Token')}
             highlightColor={theme.colors.secondary}
           />
         </IconCard>
         <IconCard {...TradesCardData} mr={[null, null, null, '16px']} mb={['16px', null, null, '0']}>
-          <StatCardContent
-            headingText={t('%trades% trades', { trades })}
-            bodyText={t('made in the last 30 days')}
+           <StatCardContent
+            headingText={t('Symbol')}
+            bodyText={t('TW')}
             highlightColor={theme.colors.primary}
           />
         </IconCard>
         <IconCard {...StakedCardData}>
           <StatCardContent
-            headingText={t('$%tvl% staked', { tvl: tvlString })}
-            bodyText={t('Total Value Locked')}
+            headingText={t('Supply')}
+            bodyText={t('12.000.000 TW')}
             highlightColor={theme.colors.failure}
           />
         </IconCard>
-      </Flex>
+
+        <Text textAlign="center" color="textSubtle" bold mb="32px">
+          {t('')}
+        </Text>
+
+       </Flex>
+       <Flex flexDirection={['column', null, null, 'row']}>
+         <IconCard {...UsersCardData} mr={[null, null, null, '16px']} mb={['16px', null, null, '0']}>
+          <StatCardContent
+             headingText={t('Decimal')}
+            bodyText={t('18')}
+            highlightColor={theme.colors.secondary}
+          />
+        </IconCard>
+        <IconCard {...TradesCardData} mr={[null, null, null, '16px']} mb={['16px', null, null, '0']}>
+           <StatCardContent
+            headingText={t('Chain')}
+            bodyText={t('Cadeceus')}
+            highlightColor={theme.colors.primary}
+          />
+        </IconCard>
+        <IconCard {...StakedCardData}>
+          <StatCardContent
+            headingText={t('Function')}
+            bodyText={t('Utility Token')}
+            highlightColor={theme.colors.failure}
+          />
+        </IconCard>
+       </Flex>
     </Flex>
   )
 }

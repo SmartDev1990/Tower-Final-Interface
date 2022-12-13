@@ -110,7 +110,7 @@ const Hero = () => {
 				id="homepage-hero"
 			>
 				<Flex flex="1" flexDirection="column">
-					<Heading scale="xxl" color="primaryDark" mb="24px">
+					<Heading scale="xxl" color="#2ecdd0" mb="24px">
 						{t('TowerSwap Exchange')}
 					</Heading>
 					<Heading scale="md" color="primaryDark" mb="24px">

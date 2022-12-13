@@ -151,7 +151,7 @@ const PlaceBidModal: React.FC<PlaceBidModalProps> = ({
           <Text>{t('Bid a multiple of 10')}</Text>
           <Flex>
             <LogoRoundIcon width="24px" height="24px" mr="4px" />
-            <Text bold>CAKE</Text>
+            <Text bold>TW</Text>
           </Flex>
         </Flex>
         {isFirstBid && (

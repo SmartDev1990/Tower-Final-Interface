@@ -20,8 +20,8 @@ const NotFound = () => {
       <StyledNotFound>
         <LogoIcon width="64px" mb="8px" />
         <Heading scale="xxl">We Are sorry</Heading>
-        <Text mb="16px">{t('Page Under Development')}</Text>
-        <Link href="/" passHref>
+        <Text mb="16px">{t('Page is under construction')}</Text>
+        <Link href="/swap" passHref>
           <Button as="a" scale="sm">
             {t('Back Home')}
           </Button>

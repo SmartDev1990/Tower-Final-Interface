@@ -5,9 +5,11 @@ import useTheme from 'hooks/useTheme'
 import Container from 'components/Layout/Container'
 import { PageMeta } from 'components/Layout/Page'
 import { useTranslation } from 'contexts/Localization'
+import FaqSection from './components/FaqSection'
 import Hero from './components/Hero'
 import { swapSectionData, earnSectionData, cakeSectionData } from './components/SalesSection/data'
 import MetricsSection from './components/MetricsSection'
+import RoadmapSection from './components/RoadmapSection'
 import SalesSection from './components/SalesSection'
 import WinSection from './components/WinSection'
 import FarmsPoolsRow from './components/FarmsPoolsRow'
@@ -54,16 +56,70 @@ const Home: React.FC = () => {
 			<PageMeta />
 			<StyledHeroSection
 				innerProps={{ style: { margin: '0', width: '100%' } }}
-				background={
-					0 === 0
-						? 'linear-gradient(90deg, rgba(196,245,246,0.5471230728619573) 13%, rgba(221,219,255,0.502305145691089) 96%)'
-						: 'linear-gradient(139.73deg, #ffffff 0%, #fff 100%)'
-				}
+				background='radial-gradient(103.12% 50% at 50% 50%, #21193a 0%, #191326 100%)'
 				index={2}
 				hasCurvedDivider
 			>
 				<Hero />
 			</StyledHeroSection>
+			<PageSection
+        innerProps={{ style: HomeSectionContainerStyles }}
+        background={theme.colors.background}
+        containerProps={{
+          id: 'home-4',
+        }}
+        index={2}
+        hasCurvedDivider={false}
+      >
+        <OuterWedgeWrapper>
+        </OuterWedgeWrapper>
+        <SalesSection {...swapSectionData(t)} />
+      </PageSection>
+      <PageSection
+        innerProps={{ style: HomeSectionContainerStyles }}
+        background='linear-gradient(90deg, rgba(75,7,102,1) 6%, rgba(10,55,85,1) 93%)'
+        index={2}
+        hasCurvedDivider={false}
+      >
+        <OuterWedgeWrapper>
+        </OuterWedgeWrapper>
+        <SalesSection {...earnSectionData(t)} />
+      </PageSection>
+      <PageSection
+        innerProps={{ style: HomeSectionContainerStyles }}
+        background={theme.colors.gradientCardHeader}
+        index={2}
+        hasCurvedDivider={false}
+      >
+        <OuterWedgeWrapper>
+          <WedgeTopRight />
+        </OuterWedgeWrapper>
+        <SalesSection {...cakeSectionData(t)} />
+      </PageSection>
+			<PageSection
+        innerProps={{ style: HomeSectionContainerStyles }}
+        background='linear-gradient(90deg, rgba(75,7,102,1) 6%, rgba(10,55,85,1) 93%)'
+        index={2}
+        hasCurvedDivider={false}
+      >
+        <MetricsSection />
+      </PageSection>
+			<PageSection
+        innerProps={{ style: HomeSectionContainerStyles }}
+        background='linear-gradient(90deg, rgba(125,16,168,1) 6%, rgba(45,10,85,1) 93%)'
+        index={2}
+        hasCurvedDivider={false}
+      >
+        <RoadmapSection />
+      </PageSection>
+			<PageSection
+        innerProps={{ style: HomeSectionContainerStyles }}
+        background='linear-gradient(90deg, rgba(75,7,102,1) 6%, rgba(10,55,85,1) 93%)'
+        index={2}
+        hasCurvedDivider={false}
+      >
+				<FaqSection />
+      </PageSection>
 		</>
 	)
 }

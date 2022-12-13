@@ -129,7 +129,7 @@ const config: (t: ContextApi['t'], languageCode?: string) => ConfigMenuItemsType
       },
       {
         label: t('Launchpad'),
-        href: '/',
+        href: '/404',
       },
       // {
       //   label: t('IFO'),
